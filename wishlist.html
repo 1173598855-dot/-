@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang=""zh-CN"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>收藏夹 - ShopWorld</title>
+    <meta name=""description"" content=""ShopWorld 我的收藏夹，管理您收藏的商品。"">
+    <link rel=""stylesheet"" href=""styles.css"">
+    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"">
+    <link rel=""icon"" href=""data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"">
+</head>
+<body>
+    <nav class=""main-nav"">
+        <div class=""nav-container"">
+            <div class=""logo""><a href=""index.html""><i class=""fas fa-globe-americas""></i> ShopWorld</a></div>
+            <div class=""nav-right"">
+                <div class=""nav-item cart-link"" onclick=""goToCart()""><i class=""fas fa-shopping-cart""></i><span id=""cartCount"">0</span><span>购物车</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class=""page-hero"">
+        <div class=""container"">
+            <h1><i class=""fas fa-heart""></i> 我的收藏</h1>
+            <p>管理您收藏的商品</p>
+        </div>
+    </section>
+
+    <section class=""wishlist-content"">
+        <div class=""container"">
+            <div class=""wishlist-grid"">
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas fa-mobile-screen-button""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">Apple iPhone 16 Pro Max</div>
+                        <div class=""wishlist-price"">¥9,999 <del>¥13,999</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(1)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas fa-shoe-prints""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">Nike Air Max 270</div>
+                        <div class=""wishlist-price"">¥899 <del>¥1,299</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(7)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas-headphones""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">Sony WH-1000XM5 降噪耳机</div>
+                        <div class=""wishlist-price"">¥2,299 <del>¥2,999</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(3)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas fa-spray-can-sparkles""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">SK-II 神仙水 230ml</div>
+                        <div class=""wishlist-price"">¥1,190 <del>¥1,590</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(18)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas fa-stopwatch""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">Garmin Forerunner 265</div>
+                        <div class=""wishlist-price"">¥3,680 <del>¥4,280</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(15)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=""wishlist-item"">
+                    <div class=""wishlist-image""><i class=""fas fa-lightbulb""></i></div>
+                    <div class=""wishlist-info"">
+                        <div class=""wishlist-name"">小米米家 智能LED台灯</div>
+                        <div class=""wishlist-price"">¥459 <del>¥699</del></div>
+                        <div class=""wishlist-actions"">
+                            <button class=""btn-primary btn-sm"" onclick=""addToCart(13)""><i class=""fas fa-cart-plus""></i> 加入购物车</button>
+                            <button class=""btn-danger btn-sm"" onclick=""this.closest('.wishlist-item').remove()""><i class=""fas fa-trash""></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=""footer"">
+        <div class=""footer-content"">
+            <div class=""container"">
+                <div class=""footer-grid"">
+                    <div class=""footer-col""><h4>了解ShopWorld</h4><a href=""about.html"">关于我们</a><a href=""contact.html"">联系我们</a></div>
+                    <div class=""footer-col""><h4>帮助中心</h4><a href="#"">购物指南</a><a href="#"">配送说明</a></div>
+                    <div class=""footer-col""><h4>关注我们</h4><p><i class=""fas fa-phone""></i> 400-123-4567</p><div class=""social-links""><a href="#""><i class=""fab fa-weixin""></i></a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class=""footer-bottom""><div class=""container""><p>&copy; 2026 ShopWorld. All rights reserved.</p></div></div>
+    </footer>
+    <script src=""data.js""></script>
+    <script src=""app.js""></script>
+</body>
+</html>

@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang=""zh-CN"">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>页面不存在 - ShopWorld</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>404 - 页面未找到 | ShopWorld</title>
+    <link rel=""stylesheet"" href=""styles.css"">
+    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"">
+    <link rel=""icon"" href=""data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"">
     <style>
         .error-page {
             min-height: 80vh;
@@ -15,75 +16,88 @@
             text-align: center;
             padding: 40px 20px;
         }
-        .error-content {
-            background: white;
-            padding: 60px 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            max-width: 500px;
-        }
-        .error-icon {
-            font-size: 80px;
+        .error-content h1 {
+            font-size: 120px;
             color: var(--accent);
-            margin-bottom: 20px;
-        }
-        .error-title {
-            font-size: 72px;
-            font-weight: bold;
-            color: var(--text-dark);
             margin-bottom: 10px;
+            animation: pulse 2s infinite;
         }
-        .error-message {
+        .error-content p {
             font-size: 18px;
             color: var(--text-light);
             margin-bottom: 30px;
         }
-        .error-btn {
-            display: inline-block;
-            padding: 14px 40px;
-            background: var(--accent);
-            color: var(--text-dark);
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: all 0.3s;
+        .error-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-        .error-btn:hover {
+        .error-btn {
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .error-btn.primary {
+            background: var(--accent);
+            color: white;
+            border: none;
+        }
+        .error-btn.primary:hover {
             background: var(--accent-hover);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .error-btn.secondary {
+            background: white;
+            color: var(--text-dark);
+            border: 1px solid var(--border);
+        }
+        .error-btn.secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .error-illustration {
+            font-size: 80px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html"><i class="fas fa-globe-americas"></i> ShopWorld</a>
-            </div>
-            <div class="nav-right">
-                <div class="nav-item cart-link" onclick="goToCart()">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span id="cartCount">0</span>
-                    <span>购物车</span>
-                </div>
+    <nav class=""main-nav"">
+        <div class=""nav-container"">
+            <div class=""logo""><a href=""index.html""><i class=""fas fa-globe-americas""></i> ShopWorld</a></div>
+            <div class=""nav-right"">
+                <div class=""nav-item cart-link"" onclick=""goToCart()""><i class=""fas fa-shopping-cart""></i><span id=""cartCount"">0</span><span>购物车</span></div>
             </div>
         </div>
     </nav>
-
-    <section class="error-page">
-        <div class="error-content">
-            <div class="error-icon"><i class="fas fa-exclamation-triangle"></i></div>
-            <div class="error-title">404</div>
-            <p class="error-message">抱歉，您访问的页面不存在或已被移除</p>
-            <a href="index.html" class="error-btn">
-                <i class="fas fa-home"></i> 返回首页
-            </a>
+    <section class=""error-page"">
+        <div class=""error-content"">
+            <div class=""error-illustration"">😕</div>
+            <h1>404</h1>
+            <p>抱歉，您访问的页面不存在或已被移除</p>
+            <div class=""error-buttons"">
+                <a href=""index.html"" class=""error-btn primary""><i class=""fas fa-home""></i> 返回首页</a>
+                <a href=""search.html"" class=""error-btn secondary""><i class=""fas fa-search""></i> 搜索商品</a>
+                <a href=""javascript:history.back()"" class=""error-btn secondary""><i class=""fas fa-arrow-left""></i> 返回上一页</a>
+            </div>
         </div>
     </section>
-
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <footer class=""footer"">
+        <div class=""footer-content""><div class=""container""><div class=""footer-grid"">
+            <div class=""footer-col""><h4>了解ShopWorld</h4><a href=""about.html"">关于我们</a><a href=""contact.html"">联系我们</a></div>
+            <div class=""footer-col""><h4>帮助中心</h4><a href="#"">购物指南</a><a href="#"">配送说明</a></div>
+            <div class=""footer-col""><h4>关注我们</h4><p><i class=""fas fa-phone""></i> 400-123-4567</p></div>
+        </div></div></div>
+        <div class=""footer-bottom""><div class=""container""><p>&copy; 2026 ShopWorld. All rights reserved.</p></div></div>
+    </footer>
+    <script src=""data.js""></script>
+    <script src=""app.js""></script>
 </body>
 </html>

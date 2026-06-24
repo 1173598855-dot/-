@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang=""zh-CN"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>联系我们 - ShopWorld</title>
+    <meta name=""description"" content=""ShopWorld 联系我们，获取购物帮助和支持。"">
+    <link rel=""stylesheet"" href=""styles.css"">
+    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"">
+    <link rel=""icon"" href=""data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"">
+</head>
+<body>
+    <nav class=""main-nav"">
+        <div class=""nav-container"">
+            <div class=""logo""><a href=""index.html""><i class=""fas fa-globe-americas""></i> ShopWorld</a></div>
+            <div class=""nav-right"">
+                <div class=""nav-item cart-link"" onclick=""goToCart()""><i class=""fas fa-shopping-cart""></i><span id=""cartCount"">0</span><span>购物车</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class=""page-hero"">
+        <div class=""container"">
+            <h1>联系我们</h1>
+            <p>我们随时为您提供帮助</p>
+        </div>
+    </section>
+
+    <section class=""contact-content"">
+        <div class=""container"">
+            <div class=""contact-grid"">
+                <div class=""contact-info-cards"">
+                    <div class=""contact-card"">
+                        <div class=""contact-icon""><i class=""fas fa-phone""></i></div>
+                        <h3>电话客服</h3>
+                        <p>400-123-4567</p>
+                        <p style=""font-size:12px;color:#999"">周一至周日 9:00-21:00</p>
+                    </div>
+                    <div class=""contact-card"">
+                        <div class=""contact-icon""><i class=""fas fa-envelope""></i></div>
+                        <h3>电子邮件</h3>
+                        <p>service@shopworld.com</p>
+                        <p style=""font-size:12px;color:#999"">24小时内回复</p>
+                    </div>
+                    <div class=""contact-card"">
+                        <div class=""contact-icon""><i class=""fab fa-weixin""></i></div>
+                        <h3>微信公众号</h3>
+                        <p>ShopWorld官方</p>
+                        <p style=""font-size:12px;color:#999"">扫码关注获取优惠</p>
+                    </div>
+                </div>
+
+                <div class=""contact-form-wrapper"">
+                    <h3><i class=""fas fa-paper-plane""></i> 在线留言</h3>
+                    <form class=""contact-form"" onsubmit=""handleContactSubmit(event)"">
+                        <div class=""form-group""><label>姓名</label><input type=""text"" placeholder=""请输入您的姓名"" required></div>
+                        <div class=""form-group""><label>邮箱</label><input type=""email"" placeholder=""请输入您的邮箱"" required></div>
+                        <div class=""form-group""><label>订单号（选填）</label><input type=""text"" placeholder=""请输入相关订单号""></div>
+                        <div class=""form-group""><label>留言内容</label><textarea rows=""5"" placeholder=""请详细描述您的问题"" required></textarea></div>
+                        <button type=""submit"" class=""submit-btn""><i class=""fas fa-paper-plane""></i> 提交留言</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=""faq-section"">
+        <div class=""container"">
+            <h2 style=""text-align:center;margin-bottom:30px"">常见问题</h2>
+            <div class=""faq-list"">
+                <div class=""faq-item""><h4>如何修改收货地址？</h4><p>在""我的订单""中找到对应订单，点击""修改地址""即可。尚未发货的订单均可修改。</p></div>
+                <div class=""faq-item""><h4>退换货政策是什么？</h4><p>支持7天无理由退换货。商品需保持原包装完好，不影响二次销售。</p></div>
+                <div class=""faq-item""><h4>多久能收到货？</h4><p>一般城市1-3个工作日，偏远地区3-7个工作日。支持加急配送服务。</p></div>
+                <div class=""faq-item""><h4>可以使用哪些支付方式？</h4><p>支持支付宝、微信支付、银联卡、信用卡等多种支付方式。</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=""footer"">
+        <div class=""footer-content"">
+            <div class=""container"">
+                <div class=""footer-grid"">
+                    <div class=""footer-col""><h4>了解ShopWorld</h4><a href=""about.html"">关于我们</a><a href=""contact.html"">联系我们</a></div>
+                    <div class=""footer-col""><h4>帮助中心</h4><a href="#"">购物指南</a><a href="#"">配送说明</a><a href="#"">退换货政策</a></div>
+                    <div class=""footer-col""><h4>关注我们</h4><p><i class=""fas fa-phone""></i> 400-123-4567</p><div class=""social-links""><a href="#""><i class=""fab fa-weixin""></i></a><a href="#""><i class=""fab fa-weibo""></i></a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class=""footer-bottom""><div class=""container""><p>&copy; 2026 ShopWorld. All rights reserved.</p></div></div>
+    </footer>
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            alert('感谢您的留言！我们会尽快回复您。');
+            e.target.reset();
+        }
+    </script>
+    <script src=""data.js""></script>
+    <script src=""app.js""></script>
+</body>
+</html>

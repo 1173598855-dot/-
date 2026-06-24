@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang=""zh-CN"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>搜索结果 - ShopWorld</title>
+    <meta name=""description"" content=""ShopWorld 搜索结果"">
+    <link rel=""stylesheet"" href=""styles.css"">
+    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"">
+    <link rel=""icon"" href=""data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"">
+</head>
+<body>
+    <nav class=""main-nav"">
+        <div class=""nav-container"">
+            <div class=""logo""><a href=""index.html""><i class=""fas fa-globe-americas""></i> ShopWorld</a></div>
+            <div class=""search-bar"">
+                <input type=""text"" placeholder=""搜索商品..."" id=""searchInput"" value="""">
+                <button class=""search-btn"" onclick=""handleSearch()""><i class=""fas fa-search""></i></button>
+            </div>
+            <div class=""nav-right"">
+                <div class=""nav-item cart-link"" onclick=""goToCart()""><i class=""fas fa-shopping-cart""></i><span id=""cartCount"">0</span><span>购物车</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class=""search-results-page"">
+        <div class=""container"">
+            <div class=""search-header"">
+                <h2><i class=""fas fa-search""></i> 搜索结果</h2>
+                <p id=""searchMessage"">输入关键词开始搜索</p>
+            </div>
+            <div class=""search-filters"">
+                <button class=""filter-chip active"" data-sort=""default"">默认排序</button>
+                <button class=""filter-chip"" data-sort=""price-asc"">价格从低到高</button>
+                <button class=""filter-chip"" data-sort=""price-desc"">价格从高到低</button>
+                <button class=""filter-chip"" data-sort=""reviews"">最多评价</button>
+            </div>
+            <div class=""product-grid"" id=""searchResults""></div>
+            <div class=""no-results"" id=""noResults"" style=""display:none"">
+                <i class=""fas fa-search""></i>
+                <h3>没有找到相关商品</h3>
+                <p>试试其他关键词，或<a href=""index.html"">返回首页</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class=""footer"">
+        <div class=""footer-content""><div class=""container""><div class=""footer-grid"">
+            <div class=""footer-col""><h4>了解ShopWorld</h4><a href=""about.html"">关于我们</a><a href=""contact.html"">联系我们</a></div>
+            <div class=""footer-col""><h4>帮助中心</h4><a href="#"">购物指南</a><a href="#"">配送说明</a></div>
+            <div class=""footer-col""><h4>关注我们</h4><p><i class=""fas fa-phone""></i> 400-123-4567</p></div>
+        </div></div></div>
+        <div class=""footer-bottom""><div class=""container""><p>&copy; 2026 ShopWorld. All rights reserved.</p></div></div>
+    </footer>
+    <script>
+        function handleSearch() {
+            const q = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!q) return;
+            const results = products.filter(p =>
+                p.name.toLowerCase().includes(q) ||
+                p.subtitle.toLowerCase().includes(q) ||
+                p.categoryName.includes(q)
+            );
+            const grid = document.getElementById('searchResults');
+            const noResults = document.getElementById('noResults');
+            const msg = document.getElementById('searchMessage');
+            msg.textContent = '""' + q + '"" 的搜索结果：找到 ' + results.length + ' 件商品';
+            if (results.length > 0) {
+                grid.style.display = 'grid';
+                noResults.style.display = 'none';
+                grid.innerHTML = results.map(p => createProductCard(p)).join('');
+            } else {
+                grid.style.display = 'none';
+                noResults.style.display = 'flex';
+            }
+        }
+        document.getElementById('searchInput').addEventListener('keypress', e => { if (e.key === 'Enter') handleSearch(); });
+    </script>
+    <script src=""data.js""></script>
+    <script src=""app.js""></script>
+</body>
+</html>

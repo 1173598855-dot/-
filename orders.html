@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang=""zh-CN"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>订单中心 - ShopWorld</title>
+    <meta name=""description"" content=""ShopWorld 订单中心，查看和管理您的订单。"">
+    <link rel=""stylesheet"" href=""styles.css"">
+    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"">
+    <link rel=""icon"" href=""data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"">
+</head>
+<body>
+    <nav class=""main-nav"">
+        <div class=""nav-container"">
+            <div class=""logo""><a href=""index.html""><i class=""fas fa-globe-americas""></i> ShopWorld</a></div>
+            <div class=""nav-right"">
+                <div class=""nav-item cart-link"" onclick=""goToCart()""><i class=""fas fa-shopping-cart""></i><span id=""cartCount"">0</span><span>购物车</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class=""page-hero"">
+        <div class=""container"">
+            <h1>我的订单</h1>
+            <p>查看和管理您的所有订单</p>
+        </div>
+    </section>
+
+    <section class=""orders-content"">
+        <div class=""container"">
+            <div class=""order-tabs"">
+                <button class=""order-tab active"">全部订单</button>
+                <button class=""order-tab"">待付款</button>
+                <button class=""order-tab"">待发货</button>
+                <button class=""order-tab"">待收货</button>
+                <button class=""order-tab"">待评价</button>
+            </div>
+
+            <div class=""order-list"">
+                <div class=""order-card"">
+                    <div class=""order-header"">
+                        <span class=""order-no"">订单号：SW202606250001</span>
+                        <span class=""order-status status-pending"">待付款</span>
+                    </div>
+                    <div class=""order-items"">
+                        <div class=""order-item"">
+                            <div class=""order-item-img""><i class=""fas fa-mobile-screen-button""></i></div>
+                            <div class=""order-item-info"">
+                                <div class=""order-item-name"">Apple iPhone 16 Pro Max 256GB</div>
+                                <div class=""order-item-meta"">数量：1 | 原价：¥13,999</div>
+                            </div>
+                            <div class=""order-item-price"">¥9,999</div>
+                        </div>
+                    </div>
+                    <div class=""order-footer"">
+                        <span>共1件商品</span>
+                        <span class=""order-total"">合计：¥9,999</span>
+                        <div class=""order-actions"">
+                            <button class=""btn-secondary""><i class=""fas fa-times""></i> 取消订单</button>
+                            <button class=""btn-primary""><i class=""fas fa-credit-card""></i> 立即付款</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=""order-card"">
+                    <div class=""order-header"">
+                        <span class=""order-no"">订单号：SW202606240002</span>
+                        <span class=""order-status status-shipping"">运输中</span>
+                    </div>
+                    <div class=""order-items"">
+                        <div class=""order-item"">
+                            <div class=""order-item-img""><i class=""fas fa-shoe-prints""></i></div>
+                            <div class=""order-item-info"">
+                                <div class=""order-item-name"">Nike Air Max 270 男子运动鞋</div>
+                                <div class=""order-item-meta"">数量：1 | ¥899</div>
+                            </div>
+                            <div class=""order-item-price"">¥899</div>
+                        </div>
+                        <div class=""order-item"">
+                            <div class=""order-item-img""><i class=""fas-lightbulb""></i></div>
+                            <div class=""order-item-info"">
+                                <div class=""order-item-name"">小米米家 智能LED台灯</div>
+                                <div class=""order-item-meta"">数量：2 | ¥459</div>
+                            </div>
+                            <div class=""order-item-price"">¥918</div>
+                        </div>
+                    </div>
+                    <div class=""order-footer"">
+                        <span>共3件商品</span>
+                        <span class=""order-total"">合计：¥1,817</span>
+                        <div class=""order-actions"">
+                            <button class=""btn-secondary""><i class=""fas fa-map-marker-alt""></i> 查看物流</button>
+                            <button class=""btn-primary""><i class=""fas fa-check""></i> 确认收货</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=""order-card"">
+                    <div class=""order-header"">
+                        <span class=""order-no"">订单号：SW202606200003</span>
+                        <span class=""order-status status-done"">已完成</span>
+                    </div>
+                    <div class=""order-items"">
+                        <div class=""order-item"">
+                            <div class=""order-item-img""><i class=""fas fa-spray-can-sparkles""></i></div>
+                            <div class=""order-item-info"">
+                                <div class=""order-item-name"">SK-II 神仙水护肤精华露 230ml</div>
+                                <div class=""order-item-meta"">数量：1 | ¥1,190</div>
+                            </div>
+                            <div class=""order-item-price"">¥1,190</div>
+                        </div>
+                    </div>
+                    <div class=""order-footer"">
+                        <span>共1件商品</span>
+                        <span class=""order-total"">合计：¥1,190</span>
+                        <div class=""order-actions"">
+                            <button class=""btn-secondary""><i class=""fas fa-redo""></i> 再次购买</button>
+                            <button class=""btn-primary""><i class=""fas fa-star""></i> 去评价</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=""footer"">
+        <div class=""footer-content"">
+            <div class=""container"">
+                <div class=""footer-grid"">
+                    <div class=""footer-col""><h4>了解ShopWorld</h4><a href=""about.html"">关于我们</a><a href=""contact.html"">联系我们</a></div>
+                    <div class=""footer-col""><h4>帮助中心</h4><a href="#"">购物指南</a><a href="#"">配送说明</a><a href="#"">退换货政策</a></div>
+                    <div class=""footer-col""><h4>关注我们</h4><p><i class=""fas fa-phone""></i> 400-123-4567</p><div class=""social-links""><a href="#""><i class=""fab fa-weixin""></i></a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class=""footer-bottom""><div class=""container""><p>&copy; 2026 ShopWorld. All rights reserved.</p></div></div>
+    </footer>
+    <script src=""data.js""></script>
+    <script src=""app.js""></script>
+</body>
+</html>

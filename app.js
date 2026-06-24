@@ -1,4 +1,4 @@
-// ===== 全局状态 =====
+﻿// ===== 全局状态 =====
 let cart = JSON.parse(localStorage.getItem('shopworld_cart')) || [];
 let currentSlide = 0;
 let slideInterval;
