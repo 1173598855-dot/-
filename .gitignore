@@ -1,4 +1,4 @@
-# OS files
+﻿# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -13,3 +13,14 @@ desktop.ini
 # Logs
 *.log
 npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Database
+data/db.json
+data/shopworld.db
+
+# Environment
+.env
+.env.local
