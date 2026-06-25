@@ -39,6 +39,9 @@
                     <option>图书文具</option>
                     <option>运动户外</option>
                     <option>美妆个护</option>
+                    <option>食品生鲜</option>
+                    <option>母婴用品</option>
+                    <option>宠物用品</option>
                 </select>
                 <input type="text" placeholder="搜索商品..." id="searchInput">
                 <button class="search-btn" onclick="handleSearch()"><i class="fas fa-search"></i></button>
@@ -73,8 +76,11 @@
             <a href="#" class="sub-nav-item">图书文具</a>
             <a href="#" class="sub-nav-item">运动户外</a>
             <a href="#" class="sub-nav-item">美妆个护</a>
+            
+            <a href="#" class="sub-nav-item">母婴用品</a>
+            <a href="#" class="sub-nav-item">宠物用品</a>
             <a href="about.html" class="sub-nav-item">关于我们</a><a href="orders.html" class="sub-nav-item">我的订单</a><a href="wishlist.html" class="sub-nav-item">收藏夹</a><a href="contact.html" class="sub-nav-item">联系我们</a>
-            <a href="#" class="sub-nav-item">食品生鲜</a>
+            
         </div>
     </div>
 
@@ -169,6 +175,9 @@
                 <button class="filter-btn" data-filter="home">家居生活</button>
                 <button class="filter-btn" data-filter="sports">运动户外</button>
                 <button class="filter-btn" data-filter="beauty">美妆个护</button>
+                <button class="filter-btn" data-filter="food">食品生鲜</button>
+                <button class="filter-btn" data-filter="maternity">母婴用品</button>
+                <button class="filter-btn" data-filter="pets">宠物用品</button>
             </div>
             <div class="product-grid" id="productGrid"></div>
         </div>
@@ -243,3 +252,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+

@@ -1,11 +1,11 @@
-// ===== 商品数据库 =====
+﻿// ===== 鍟嗗搧鏁版嵁搴?=====
 const products = [
     {
         "id": 1,
-        "name": "Apple iPhone 16 Pro Max 256GB 原色钛金属",
-        "subtitle": "A18 Pro芯片 | 4800万像素主摄 | USB-C接口",
+        "name": "Apple iPhone 16 Pro Max 256GB 鍘熻壊閽涢噾灞?,
+        "subtitle": "A18 Pro鑺墖 | 4800涓囧儚绱犱富鎽?| USB-C鎺ュ彛",
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 9999,
         "originalPrice": 13999,
         "discount": 29,
@@ -13,21 +13,21 @@ const products = [
         "reviews": 12580,
         "icon": "fa-mobile-screen-button",
         "color": "#1a1a2e",
-        "badge": "爆款",
+        "badge": "鐖嗘",
         "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=400&fit=crop",
         "features": [
-            "A18 Pro芯片",
-            "4800万像素",
-            "USB-C快充",
-            "全天候续航"
+            "A18 Pro鑺墖",
+            "4800涓囧儚绱?,
+            "USB-C蹇厖",
+            "鍏ㄥぉ鍊欑画鑸?
         ]
     },
     {
         "id": 2,
-        "name": "MacBook Air M3 15英寸 午夜色",
-        "subtitle": "M3芯片 | 16GB内存 | 512GB固态硬盘",
+        "name": "MacBook Air M3 15鑻卞 鍗堝鑹?,
+        "subtitle": "M3鑺墖 | 16GB鍐呭瓨 | 512GB鍥烘€佺‖鐩?,
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 10499,
         "originalPrice": 12999,
         "discount": 19,
@@ -35,21 +35,21 @@ const products = [
         "reviews": 8920,
         "icon": "fa-laptop",
         "color": "#2d2d44",
-        "badge": "新品",
+        "badge": "鏂板搧",
         "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop",
         "features": [
-            "Apple M3芯片",
-            "15.3英寸屏",
-            "18小时续航",
-            "无风扇静音"
+            "Apple M3鑺墖",
+            "15.3鑻卞灞?,
+            "18灏忔椂缁埅",
+            "鏃犻鎵囬潤闊?
         ]
     },
     {
         "id": 3,
-        "name": "Sony WH-1000XM5 头戴式无线降噪耳机",
-        "subtitle": "行业领先降噪 | 30小时续航 | Hi-Res音质",
+        "name": "Sony WH-1000XM5 澶存埓寮忔棤绾块檷鍣€虫満",
+        "subtitle": "琛屼笟棰嗗厛闄嶅櫔 | 30灏忔椂缁埅 | Hi-Res闊宠川",
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 2299,
         "originalPrice": 2999,
         "discount": 23,
@@ -57,21 +57,21 @@ const products = [
         "reviews": 15600,
         "icon": "fa-headphones",
         "color": "#16213e",
-        "badge": "特价",
+        "badge": "鐗逛环",
         "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=400&h=400&fit=crop",
         "features": [
-            "30小时续航",
-            "降噪技术",
-            "Hi-Res音质",
-            "多点连接"
+            "30灏忔椂缁埅",
+            "闄嶅櫔鎶€鏈?,
+            "Hi-Res闊宠川",
+            "澶氱偣杩炴帴"
         ]
     },
     {
         "id": 4,
         "name": "Samsung Galaxy S24 Ultra 12+512GB",
-        "subtitle": "Galaxy AI | 2亿像素 | S Pen内置",
+        "subtitle": "Galaxy AI | 2浜垮儚绱?| S Pen鍐呯疆",
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 9699,
         "originalPrice": 11999,
         "discount": 19,
@@ -83,17 +83,17 @@ const products = [
         "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=400&h=400&fit=crop",
         "features": [
             "Snapdragon 8 Gen 3",
-            "2亿像素",
+            "2浜垮儚绱?,
             "Galaxy AI",
             "S Pen"
         ]
     },
     {
         "id": 5,
-        "name": "iPad Pro M4 平板电脑 11英寸",
+        "name": "iPad Pro M4 骞虫澘鐢佃剳 11鑻卞",
         "subtitle": "Ultra Retina XDR | Apple Pencil Pro",
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 7999,
         "originalPrice": 8999,
         "discount": 11,
@@ -101,21 +101,21 @@ const products = [
         "reviews": 5620,
         "icon": "fa-tablet-alt",
         "color": "#0f3460",
-        "badge": "热销",
+        "badge": "鐑攢",
         "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop",
         "features": [
-            "M4芯片",
-            "XDR屏幕",
+            "M4鑺墖",
+            "XDR灞忓箷",
             "Apple Pencil Pro",
-            "超薄设计"
+            "瓒呰杽璁捐"
         ]
     },
     {
         "id": 6,
-        "name": "DJI Mini 4 Pro 航拍无人机",
-        "subtitle": "249g轻巧机身 | 4K HDR视频 | 全向避障",
+        "name": "DJI Mini 4 Pro 鑸媿鏃犱汉鏈?,
+        "subtitle": "249g杞诲阀鏈鸿韩 | 4K HDR瑙嗛 | 鍏ㄥ悜閬块殰",
         "category": "electronics",
-        "categoryName": "数码电器",
+        "categoryName": "鏁扮爜鐢靛櫒",
         "price": 5788,
         "originalPrice": 6988,
         "discount": 17,
@@ -126,18 +126,18 @@ const products = [
         "badge": "",
         "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=400&fit=crop",
         "features": [
-            "249g轻量",
+            "249g杞婚噺",
             "4K/60fps",
-            "全向避障",
-            "34分钟续航"
+            "鍏ㄥ悜閬块殰",
+            "34鍒嗛挓缁埅"
         ]
     },
     {
         "id": 7,
-        "name": "Nike Air Max 270 男子运动鞋",
-        "subtitle": "Air Max气垫 | 透气网面 | 缓震回弹",
+        "name": "Nike Air Max 270 鐢峰瓙杩愬姩闉?,
+        "subtitle": "Air Max姘斿灚 | 閫忔皵缃戦潰 | 缂撻渿鍥炲脊",
         "category": "clothing",
-        "categoryName": "时尚服饰",
+        "categoryName": "鏃跺皻鏈嶉グ",
         "price": 899,
         "originalPrice": 1299,
         "discount": 31,
@@ -145,21 +145,21 @@ const products = [
         "reviews": 23450,
         "icon": "fa-shoe-prints",
         "color": "#e94560",
-        "badge": "特价",
+        "badge": "鐗逛环",
         "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
         "features": [
-            "Air Max 270气垫",
-            "工程网眼",
-            "泡棉中底",
-            "橡胶外底"
+            "Air Max 270姘斿灚",
+            "宸ョ▼缃戠溂",
+            "娉℃涓簳",
+            "姗¤兌澶栧簳"
         ]
     },
     {
         "id": 8,
-        "name": "优衣库 男女同款轻型羽绒服",
-        "subtitle": "650蓬松度 | 可收纳设计 | 多色可选",
+        "name": "浼樿。搴?鐢峰コ鍚屾杞诲瀷缇界粧鏈?,
+        "subtitle": "650钃澗搴?| 鍙敹绾宠璁?| 澶氳壊鍙€?,
         "category": "clothing",
-        "categoryName": "时尚服饰",
+        "categoryName": "鏃跺皻鏈嶉グ",
         "price": 399,
         "originalPrice": 599,
         "discount": 33,
@@ -167,21 +167,21 @@ const products = [
         "reviews": 45600,
         "icon": "fa-vest",
         "color": "#073b4c",
-        "badge": "爆款",
+        "badge": "鐖嗘",
         "image": "https://images.unsplash.com/photo-1591047139829-d91aecb9caea?w=400&h=400&fit=crop",
         "features": [
-            "650蓬松度",
-            "轻便可收纳",
-            "防泼水面料",
-            "多色可选"
+            "650钃澗搴?,
+            "杞讳究鍙敹绾?,
+            "闃叉臣姘撮潰鏂?,
+            "澶氳壊鍙€?
         ]
     },
     {
         "id": 9,
-        "name": "Adidas Ultraboost 23 跑步鞋",
-        "subtitle": "Boost中底 | Primeknit鞋面 | Continental大底",
+        "name": "Adidas Ultraboost 23 璺戞闉?,
+        "subtitle": "Boost涓簳 | Primeknit闉嬮潰 | Continental澶у簳",
         "category": "clothing",
-        "categoryName": "时尚服饰",
+        "categoryName": "鏃跺皻鏈嶉グ",
         "price": 1099,
         "originalPrice": 1690,
         "discount": 35,
@@ -192,18 +192,18 @@ const products = [
         "badge": "",
         "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400&h=400&fit=crop",
         "features": [
-            "BOOST能量回馈",
-            "Primeknit鞋面",
-            "Continental大底",
-            "Torsion系统"
+            "BOOST鑳介噺鍥為",
+            "Primeknit闉嬮潰",
+            "Continental澶у簳",
+            "Torsion绯荤粺"
         ]
     },
     {
         "id": 10,
-        "name": "Levis 501 原版直筒牛仔裤",
-        "subtitle": "经典501版型 | 100纯棉 | 永恒时尚",
+        "name": "Levis 501 鍘熺増鐩寸瓛鐗涗粩瑁?,
+        "subtitle": "缁忓吀501鐗堝瀷 | 100绾 | 姘告亽鏃跺皻",
         "category": "clothing",
-        "categoryName": "时尚服饰",
+        "categoryName": "鏃跺皻鏈嶉グ",
         "price": 599,
         "originalPrice": 890,
         "discount": 33,
@@ -211,21 +211,21 @@ const products = [
         "reviews": 32100,
         "icon": "fa-shirt",
         "color": "#2c3e50",
-        "badge": "经典",
+        "badge": "缁忓吀",
         "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop",
         "features": [
-            "经典501版型",
-            "纯棉丹宁",
-            "纽扣门襟",
-            "永恒时尚"
+            "缁忓吀501鐗堝瀷",
+            "绾涓瑰畞",
+            "绾芥墸闂ㄨ",
+            "姘告亽鏃跺皻"
         ]
     },
     {
         "id": 11,
-        "name": "戴森 V15 Detect 无线吸尘器",
-        "subtitle": "激光探测 | 240AW吸力 | 整机密封HEPA",
+        "name": "鎴存． V15 Detect 鏃犵嚎鍚稿皹鍣?,
+        "subtitle": "婵€鍏夋帰娴?| 240AW鍚稿姏 | 鏁存満瀵嗗皝HEPA",
         "category": "home",
-        "categoryName": "家居生活",
+        "categoryName": "瀹跺眳鐢熸椿",
         "price": 4990,
         "originalPrice": 5990,
         "discount": 17,
@@ -233,21 +233,21 @@ const products = [
         "reviews": 12340,
         "icon": "fa-broom",
         "color": "#e67e22",
-        "badge": "智能",
+        "badge": "鏅鸿兘",
         "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=400&fit=crop",
         "features": [
-            "激光探测",
-            "240AW吸力",
-            "HEPA密封",
-            "60分钟续航"
+            "婵€鍏夋帰娴?,
+            "240AW鍚稿姏",
+            "HEPA瀵嗗皝",
+            "60鍒嗛挓缁埅"
         ]
     },
     {
         "id": 12,
-        "name": "MUJI 无印良品 香薰机",
-        "subtitle": "超声波雾化 | 定时关机 | 氛围灯",
+        "name": "MUJI 鏃犲嵃鑹搧 棣欒柊鏈?,
+        "subtitle": "瓒呭０娉㈤浘鍖?| 瀹氭椂鍏虫満 | 姘涘洿鐏?,
         "category": "home",
-        "categoryName": "家居生活",
+        "categoryName": "瀹跺眳鐢熸椿",
         "price": 350,
         "originalPrice": 450,
         "discount": 22,
@@ -258,18 +258,18 @@ const products = [
         "badge": "",
         "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400&h=400&fit=crop",
         "features": [
-            "超声波雾化",
-            "定时关机",
-            "氛围灯",
-            "极简设计"
+            "瓒呭０娉㈤浘鍖?,
+            "瀹氭椂鍏虫満",
+            "姘涘洿鐏?,
+            "鏋佺畝璁捐"
         ]
     },
     {
         "id": 13,
-        "name": "小米米家 智能LED台灯",
-        "subtitle": "调光调色 | 护眼模式 | 定时休息提醒",
+        "name": "灏忕背绫冲 鏅鸿兘LED鍙扮伅",
+        "subtitle": "璋冨厜璋冭壊 | 鎶ょ溂妯″紡 | 瀹氭椂浼戞伅鎻愰啋",
         "category": "home",
-        "categoryName": "家居生活",
+        "categoryName": "瀹跺眳鐢熸椿",
         "price": 459,
         "originalPrice": 699,
         "discount": 34,
@@ -277,21 +277,21 @@ const products = [
         "reviews": 15430,
         "icon": "fa-lightbulb",
         "color": "#ffeaa7",
-        "badge": "特价",
+        "badge": "鐗逛环",
         "image": "https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=400&h=400&fit=crop",
         "features": [
-            "5500K自然光",
-            "无频闪",
-            "智能调光",
-            "USB充电"
+            "5500K鑷劧鍏?,
+            "鏃犻闂?,
+            "鏅鸿兘璋冨厜",
+            "USB鍏呯數"
         ]
     },
     {
         "id": 14,
-        "name": "小米米家 扫地机器人Pro",
-        "subtitle": "LDS激光导航 | 5000Pa吸力 | 自动集尘",
+        "name": "灏忕背绫冲 鎵湴鏈哄櫒浜篜ro",
+        "subtitle": "LDS婵€鍏夊鑸?| 5000Pa鍚稿姏 | 鑷姩闆嗗皹",
         "category": "home",
-        "categoryName": "家居生活",
+        "categoryName": "瀹跺眳鐢熸椿",
         "price": 2699,
         "originalPrice": 3499,
         "discount": 23,
@@ -299,21 +299,21 @@ const products = [
         "reviews": 21560,
         "icon": "fa-robot",
         "color": "#dfe6e9",
-        "badge": "智能",
+        "badge": "鏅鸿兘",
         "image": "https://images.unsplash.com/photo-1589830852856-9c6b3d2e5f6d?w=400&h=400&fit=crop",
         "features": [
-            "LDS导航",
-            "5000Pa吸力",
-            "自动集尘",
-            "APP控制"
+            "LDS瀵艰埅",
+            "5000Pa鍚稿姏",
+            "鑷姩闆嗗皹",
+            "APP鎺у埗"
         ]
     },
     {
         "id": 15,
-        "name": "Garmin Forerunner 265 GPS手表",
-        "subtitle": "AMOLED彩屏 | 训练状态 | 续航13天",
+        "name": "Garmin Forerunner 265 GPS鎵嬭〃",
+        "subtitle": "AMOLED褰╁睆 | 璁粌鐘舵€?| 缁埅13澶?,
         "category": "sports",
-        "categoryName": "运动户外",
+        "categoryName": "杩愬姩鎴峰",
         "price": 3680,
         "originalPrice": 4280,
         "discount": 14,
@@ -324,18 +324,18 @@ const products = [
         "badge": "",
         "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
         "features": [
-            "AMOLED屏幕",
-            "训练状态",
-            "GPS多卫星",
-            "13天续航"
+            "AMOLED灞忓箷",
+            "璁粌鐘舵€?,
+            "GPS澶氬崼鏄?,
+            "13澶╃画鑸?
         ]
     },
     {
         "id": 16,
-        "name": "Coleman 自动速开帐篷 四人款",
-        "subtitle": "60秒快速搭建 | 防雨涂层 | 遮阳顶棚",
+        "name": "Coleman 鑷姩閫熷紑甯愮 鍥涗汉娆?,
+        "subtitle": "60绉掑揩閫熸惌寤?| 闃查洦娑傚眰 | 閬槼椤舵",
         "category": "sports",
-        "categoryName": "运动户外",
+        "categoryName": "杩愬姩鎴峰",
         "price": 1299,
         "originalPrice": 1899,
         "discount": 32,
@@ -343,21 +343,21 @@ const products = [
         "reviews": 4320,
         "icon": "fa-campground",
         "color": "#00b894",
-        "badge": "户外",
+        "badge": "鎴峰",
         "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=400&h=400&fit=crop",
         "features": [
-            "60秒搭建",
-            "TX2防雨",
-            "遮阳顶棚",
-            "电线管理口"
+            "60绉掓惌寤?,
+            "TX2闃查洦",
+            "閬槼椤舵",
+            "鐢电嚎绠＄悊鍙?
         ]
     },
     {
         "id": 17,
-        "name": "Keep 智能健身镜 家用全能健身房",
-        "subtitle": "AI动作识别 | 实时课程 | 4K高清屏",
+        "name": "Keep 鏅鸿兘鍋ヨ韩闀?瀹剁敤鍏ㄨ兘鍋ヨ韩鎴?,
+        "subtitle": "AI鍔ㄤ綔璇嗗埆 | 瀹炴椂璇剧▼ | 4K楂樻竻灞?,
         "category": "sports",
-        "categoryName": "运动户外",
+        "categoryName": "杩愬姩鎴峰",
         "price": 2999,
         "originalPrice": 3999,
         "discount": 25,
@@ -365,21 +365,21 @@ const products = [
         "reviews": 3210,
         "icon": "fa-dumbbell",
         "color": "#636e72",
-        "badge": "新品",
+        "badge": "鏂板搧",
         "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=400&h=400&fit=crop",
         "features": [
-            "43寸4K屏",
-            "AI动作纠正",
-            "500+课程",
-            "镜面模式"
+            "43瀵?K灞?,
+            "AI鍔ㄤ綔绾犳",
+            "500+璇剧▼",
+            "闀滈潰妯″紡"
         ]
     },
     {
         "id": 18,
-        "name": "SK-II 神仙水护肤精华露 230ml",
-        "subtitle": "PITERA精华 | 改善肌肤质地 | 经典畅销",
+        "name": "SK-II 绁炰粰姘存姢鑲ょ簿鍗庨湶 230ml",
+        "subtitle": "PITERA绮惧崕 | 鏀瑰杽鑲岃偆璐ㄥ湴 | 缁忓吀鐣呴攢",
         "category": "beauty",
-        "categoryName": "美妆个护",
+        "categoryName": "缇庡涓姢",
         "price": 1190,
         "originalPrice": 1590,
         "discount": 25,
@@ -387,21 +387,21 @@ const products = [
         "reviews": 34560,
         "icon": "fa-spray-can-sparkles",
         "color": "#fd79a8",
-        "badge": "爆款",
+        "badge": "鐖嗘",
         "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop",
         "features": [
-            "PITERA精华",
-            "改善肌肤",
-            "清爽不黏腻",
-            "畅销经典"
+            "PITERA绮惧崕",
+            "鏀瑰杽鑲岃偆",
+            "娓呯埥涓嶉粡鑵?,
+            "鐣呴攢缁忓吀"
         ]
     },
     {
         "id": 19,
-        "name": "戴森 Supersonic HD08 吹风机",
-        "subtitle": "高速数码马达 | 智能温控 | 负离子护发",
+        "name": "鎴存． Supersonic HD08 鍚归鏈?,
+        "subtitle": "楂橀€熸暟鐮侀┈杈?| 鏅鸿兘娓╂帶 | 璐熺瀛愭姢鍙?,
         "category": "beauty",
-        "categoryName": "美妆个护",
+        "categoryName": "缇庡涓姢",
         "price": 2790,
         "originalPrice": 3390,
         "discount": 18,
@@ -412,18 +412,18 @@ const products = [
         "badge": "",
         "image": "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=400&h=400&fit=crop",
         "features": [
-            "高速数码马达",
-            "智能温控",
-            "4款风嘴",
-            "轻量化"
+            "楂橀€熸暟鐮侀┈杈?,
+            "鏅鸿兘娓╂帶",
+            "4娆鹃鍢?,
+            "杞婚噺鍖?
         ]
     },
     {
         "id": 20,
-        "name": "雅诗兰黛 小棕瓶精华露 第七代",
-        "subtitle": "肌因修护 | 抗老紧致 | 夜间修护",
+        "name": "闆呰瘲鍏伴粵 灏忔鐡剁簿鍗庨湶 绗竷浠?,
+        "subtitle": "鑲屽洜淇姢 | 鎶楄€佺揣鑷?| 澶滈棿淇姢",
         "category": "beauty",
-        "categoryName": "美妆个护",
+        "categoryName": "缇庡涓姢",
         "price": 980,
         "originalPrice": 1380,
         "discount": 29,
@@ -431,35 +431,242 @@ const products = [
         "reviews": 28700,
         "icon": "fa-pump-soap",
         "color": "#2d3436",
-        "badge": "经典",
+        "badge": "缁忓吀",
         "image": "https://images.unsplash.com/photo-1583501910003-03aa3b0b0cba?w=400&h=400&fit=crop",
         "features": [
-            "第七代配方",
+            "绗竷浠ｉ厤鏂?,
             "ChronoluxCB",
-            "夜间修护",
-            "100ml大容量"
+            "澶滈棿淇姢",
+            "100ml澶у閲?
         ]
     }
 ];
 
-// ===== 轮播图数据 =====
-const slides = [
+// ===== 杞挱鍥炬暟鎹?=====
+const,
+    ,
     {
-        "title": "夏日狂欢节",
-        "subtitle": "精选好物低至3折起",
+        "id": 21,
+        "name": "佳沛阳光金奇异果 进口新西兰猕猴桃 24粒装",
+        "subtitle": "新西兰进口 | 维C之王 | 甜酸适中",
+        "category": "food",
+        "categoryName": "食品生鲜",
+        "price": 128,
+        "originalPrice": 168,
+        "discount": 24,
+        "rating": 4.8,
+        "reviews": 45200,
+        "icon": "fa-apple-whole",
+        "color": "#27ae60",
+        "badge": "爆款",
+        "image": "https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=400&h=400&fit=crop",
+        "features": ["新西兰进口", "维C丰富", "甜酸适中", "24粒大果"]
+    },
+    {
+        "id": 22,
+        "name": "三只松鼠每日坚果 混合坚果仁 750g/30包",
+        "subtitle": "7种坚果搭配 | 科学配比 | 每天一包",
+        "category": "food",
+        "categoryName": "食品生鲜",
+        "price": 149,
+        "originalPrice": 199,
+        "discount": 25,
+        "rating": 4.7,
+        "reviews": 89600,
+        "icon": "fa-cookie-bite",
+        "color": "#e67e22",
+        "badge": "自营",
+        "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&h=400&fit=crop",
+        "features": ["7种坚果", "科学配比", "30日装", "非油炸"]
+    },
+    {
+        "id": 23,
+        "name": "泰国进口金枕榴莲冷冻果肉 1kg",
+        "subtitle": "树上熟 | 香甜绵密 | 开袋即食",
+        "category": "food",
+        "categoryName": "食品生鲜",
+        "price": 89,
+        "originalPrice": 139,
+        "discount": 36,
+        "rating": 4.9,
+        "reviews": 32100,
+        "icon": "fa-lemon",
+        "color": "#f39c12",
+        "badge": "进口",
+        "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=400&h=400&fit=crop",
+        "features": ["树上成熟", "泰国进口", "冷冻锁鲜", "1kg大包装"]
+    },
+    {
+        "id": 24,
+        "name": "蒙牛特仑苏纯牛奶 250ml*12盒",
+        "subtitle": "有机牧场 | 3.6g优质蛋白",
+        "category": "food",
+        "categoryName": "食品生鲜",
+        "price": 59,
+        "originalPrice": 79,
+        "discount": 26,
+        "rating": 4.8,
+        "reviews": 156000,
+        "icon": "fa-mug-hot",
+        "color": "#3498db",
+        "badge": "经典",
+        "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=400&fit=crop",
+        "features": ["有机奶源", "3.6g蛋白", "12盒装", "巴氏杀菌"]
+    },
+    {
+        "id": 25,
+        "name": "爱他美卓萃婴儿配方奶粉 白金版 3段 900g",
+        "subtitle": "OPO结构脂 | 益生菌 | 欧洲原装",
+        "category": "maternity",
+        "categoryName": "母婴用品",
+        "price": 269,
+        "originalPrice": 359,
+        "discount": 25,
+        "rating": 4.9,
+        "reviews": 28700,
+        "icon": "fa-baby-carriage",
+        "color": "#e84393",
+        "badge": "进口",
+        "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop",
+        "features": ["OPO结构脂", "益生菌配方", "欧洲原装", "900g"]
+    },
+    {
+        "id": 26,
+        "name": "BabyCare婴儿湿巾 手口专用 80抽*10包",
+        "subtitle": "EDI纯水 | 无酒精无香精 | 加厚型",
+        "category": "maternity",
+        "categoryName": "母婴用品",
+        "price": 49,
+        "originalPrice": 79,
+        "discount": 38,
+        "rating": 4.7,
+        "reviews": 67800,
+        "icon": "fa-baby",
+        "color": "#fd79a8",
+        "badge": "爆款",
+        "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop",
+        "features": ["EDI纯水", "无添加", "加厚材质", "800抽大包装"]
+    },
+    {
+        "id": 27,
+        "name": "好孩子婴儿推车 可坐可躺 轻便折叠",
+        "subtitle": "一键收车 | 四轮避震 | 超轻便携",
+        "category": "maternity",
+        "categoryName": "母婴用品",
+        "price": 1299,
+        "originalPrice": 1899,
+        "discount": 32,
+        "rating": 4.8,
+        "reviews": 12300,
+        "icon": "fa-stroller",
+        "color": "#6c5ce7",
+        "badge": "新品",
+        "image": "https://images.unsplash.com/photo-1590333748338-d629e4564ad9?w=400&h=400&fit=crop",
+        "features": ["一键收车", "四轮避震", "可坐可躺", "轻量化设计"]
+    },
+    {
+        "id": 28,
+        "name": "巴布熊纸尿裤 XL号 超薄透气 干爽",
+        "subtitle": "3D悬浮芯体 | 瞬吸干爽 | 防侧漏",
+        "category": "maternity",
+        "categoryName": "母婴用品",
+        "price": 99,
+        "originalPrice": 159,
+        "discount": 38,
+        "rating": 4.6,
+        "reviews": 45600,
+        "icon": "fa-box-open",
+        "color": "#00b894",
+        "badge": "特惠",
+        "image": "https://images.unsplash.com/photo-1522771739844-6a7f6482a84c?w=400&h=400&fit=crop",
+        "features": ["3D悬浮芯", "瞬吸干爽", "防侧漏", "超薄透气"]
+    },
+    {
+        "id": 29,
+        "name": "皇家canin法国冠能狗粮 成犬专用 2kg",
+        "subtitle": "科学营养 | 保护肠胃 | 亮毛护肤",
+        "category": "pets",
+        "categoryName": "宠物用品",
+        "price": 158,
+        "originalPrice": 198,
+        "discount": 20,
+        "rating": 4.8,
+        "reviews": 23400,
+        "icon": "fa-bone",
+        "color": "#d63031",
+        "badge": "进口",
+        "image": "https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=400&h=400&fit=crop",
+        "features": ["科学配方", "保护肠胃", "亮毛护肤", "2kg装"]
+    },
+    {
+        "id": 30,
+        "name": "pidan猫砂 豆腐猫砂 混合结团 6L",
+        "subtitle": "可冲马桶 | 原味无尘 | 强效结团",
+        "category": "pets",
+        "categoryName": "宠物用品",
+        "price": 59,
+        "originalPrice": 89,
+        "discount": 34,
+        "rating": 4.7,
+        "reviews": 56700,
+        "icon": "fa-cat",
+        "color": "#0984e3",
+        "badge": "爆款",
+        "image": "https://images.unsplash.com/photo-1514888286858-3119377a2d3c?w=400&h=400&fit=crop",
+        "features": ["豆腐砂基底", "可冲马桶", "强效结团", "无尘配方"]
+    },
+    {
+        "id": 31,
+        "name": "Catit猫咪饮水机 循环过滤 静音水泵",
+        "subtitle": "3L大容量 | 三重过滤 | LED指示灯",
+        "category": "pets",
+        "categoryName": "宠物用品",
+        "price": 239,
+        "originalPrice": 329,
+        "discount": 27,
+        "rating": 4.6,
+        "reviews": 8900,
+        "icon": "fa-droplet",
+        "color": "#00cec9",
+        "badge": "智能",
+        "image": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=400&h=400&fit=crop",
+        "features": ["3L大容量", "三重过滤", "静音设计", "LED指示"]
+    },
+    {
+        "id": 32,
+        "name": "Petkit小佩智能喂食器 自动定时定量",
+        "subtitle": "APP控制 | 双重供电 | 低噪设计",
+        "category": "pets",
+        "categoryName": "宠物用品",
+        "price": 399,
+        "originalPrice": 549,
+        "discount": 27,
+        "rating": 4.8,
+        "reviews": 15600,
+        "icon": "fa-robot",
+        "color": "#636e72",
+        "badge": "智能",
+        "image": "https://images.unsplash.com/photo-1583337130417-13104dec14a3?w=400&h=400&fit=crop",
+        "features": ["APP远程控制", "双重供电", "低噪设计", "定量投喂"]
+    }
+
+slides = [
+    {
+        "title": "澶忔棩鐙傛鑺?,
+        "subtitle": "绮鹃€夊ソ鐗╀綆鑷?鎶樿捣",
         "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        "cta": "立即抢购"
+        "cta": "绔嬪嵆鎶㈣喘"
     },
     {
-        "title": "新品首发",
-        "subtitle": "最新科技产品抢先体验",
+        "title": "鏂板搧棣栧彂",
+        "subtitle": "鏈€鏂扮鎶€浜у搧鎶㈠厛浣撻獙",
         "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        "cta": "查看详情"
+        "cta": "鏌ョ湅璇︽儏"
     },
     {
-        "title": "品牌特卖",
-        "subtitle": "大牌正品，超值优惠",
+        "title": "鍝佺墝鐗瑰崠",
+        "subtitle": "澶х墝姝ｅ搧锛岃秴鍊间紭鎯?,
         "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-        "cta": "马上选购"
+        "cta": "椹笂閫夎喘"
     }
 ];

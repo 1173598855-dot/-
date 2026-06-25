@@ -16,7 +16,7 @@ router.get('/stats', authenticateToken, isAdmin, (req, res) => {
         const orderItems = get('order_items');
         const topProducts = products.map(p => {
             const sold = orderItems.filter(i => i.product_id === p.id).reduce((s,i) => s + i.quantity, 0);
-            return { ...p, total_sold: sold };
+            return { ...p, total_sold: sold, category_name: p.category_name || p.categoryName || '' };
         }).sort((a,b) => b.total_sold - a.total_sold).slice(0, 5);
         res.json({ success: true, data: { totalUsers: users.length, totalOrders: orders.length, totalRevenue: revenue, recentOrders, topProducts } });
     } catch (err) { res.status(500).json({ success: false, message: err.message }); }
@@ -68,7 +68,27 @@ router.delete('/users/:id', authenticateToken, isAdmin, (req, res) => {
 // Get all products
 router.get('/products', authenticateToken, isAdmin, (req, res) => {
     try {
-        const products = get('products').sort((a,b) => b.id - a.id);
+        let products = get('products').sort((a,b) => b.id - a.id);
+        products = products.map(p => {
+            const catName = p.category_name || p.categoryName || p.category || '';
+            const origPrice = p.original_price || p.originalPrice || p.price;
+            const disc = p.discount || (origPrice && p.price ? Math.round((1 - p.price / origPrice) * 100) : 0);
+            return {
+                ...p,
+                category_name: catName,
+                categoryName: catName,
+                original_price: origPrice,
+                originalPrice: origPrice,
+                rating: p.rating || 4.5,
+                reviews: p.reviews || 0,
+                stock: p.stock || 100,
+                sales: p.sales || 0,
+                icon: p.icon || 'fa-box',
+                badge: p.badge || '',
+                discount: disc,
+                color: p.color || '#6366f1'
+            };
+        });
         res.json({ success: true, data: products });
     } catch (err) { res.status(500).json({ success: false, message: err.message }); }
 });
